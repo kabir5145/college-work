@@ -1,0 +1,40 @@
+:root {
+    --main-color: aqua;
+    --border-color: black;
+    --background-color: rgb(162, 138, 138);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.box {
+    border: 3px solid black;
+    border-radius: 30px;
+    width: 500px;
+    height: 800px;
+    background-color: var(--main-color);
+    margin: auto;
+}
+
+.form {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font: bold;
+}
+
+.button_1 {
+    background-color: green;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button_2 {
+    background-color: red;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -5,12 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="box">
-        <form action="Submit " method="Reset">
-
+        <center>
+        <h1>Form</h1>
+        </center>
+        <form action="Submit " method="Reset" class="form">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br><br>
+            <label for="gmail">Enter Your Gmail:</label><br>
+            <input type="email" id="gmail" name="gmail"><br><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <textarea name="text" id="about">tell about something </textarea><br><br>
+            <input type="submit" value="Submit" class = "button_1">
+            <input type="reset" value="Reset" class = "button_2">
         </form>
     </div>
 </body>
