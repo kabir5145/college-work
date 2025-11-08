@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Kabir — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#home" aria-label="Kabir homepage">
+                <!-- Simple SVG avatar + name -->
+                <svg width="44" height="44" viewBox="0 0 100 100" class="avatar" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                            <stop offset="0" stop-color="#6C5CE7" />
+                            <stop offset="1" stop-color="#00B894" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="48" fill="url(#g)" />
+                    <text x="50" y="60" font-size="44" font-family="Verdana" fill="#fff" text-anchor="middle">K</text>
+                </svg>
+                <span class="brand">Kabir</span>
+            </a>
+
+            <nav class="nav" aria-label="Main navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact" class="cta">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Hi, I'm <span class="accent">Kabir</span></h1>
+                    <p class="lead">A passionate developer who loves building elegant, accessible, and responsive web
+                        experiences.</p>
+                    <p class="actions">
+                        <a href="#projects" class="btn">See my work</a>
+                        <a href="#contact" class="btn ghost">Get in touch</a>
+                    </p>
+                </div>
+
+                <div class="hero-card" aria-hidden="true">
+                    <!-- Decorative card with sample info -->
+                    <div class="profile">
+                        <div class="profile-avatar" aria-hidden="true">K</div>
+                        <div>
+                            <h3>Kabir</h3>
+                            <p class="muted">Frontend • Java • AI Enthusiast</p>
+                        </div>
+                    </div>
+
+                    <ul class="meta">
+                        <li><strong>Location</strong><span>India</span></li>
+                        <li><strong>Availability</strong><span>Open to work</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About me</h2>
+                <div class="about-grid">
+                    <p>I build clean, user-friendly frontends and learn new tools daily. Currently exploring Java + AI
+                        &amp; Web Development. I enjoy problem solving and turning ideas into polished products.</p>
+                    <div class="about-details">
+                        <p><strong>Experience:</strong> Projects in Java, HTML/CSS, JS, basic AI experiments</p>
+                        <p><strong>Hobbies:</strong> Calisthenics, reading, coding challenges</p>
+                        <p><strong>Goal:</strong> Make useful, well-designed software and keep learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section alt">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive portfolio built with HTML &amp; CSS. Clean design and accessible markup.</p>
+                        <p class="tags"><span>HTML</span><span>CSS</span></p>
+                        <a class="card-link" href="#" aria-label="Open Portfolio project">View</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Java Practice App</h3>
+                        <p>A small Java application for algorithm practice and utilities.</p>
+                        <p class="tags"><span>Java</span></p>
+                        <a class="card-link" href="#" aria-label="Open Java Practice project">View</a>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Mini AI Demo</h3>
+                        <p>Experimented with a basic ML pipeline / demo (notes &amp; experiments).</p>
+                        <p class="tags"><span>AI</span><span>Python</span></p>
+                        <a class="card-link" href="#" aria-label="Open AI Demo project">View</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                        <h4>Frontend</h4>
+                        <p>HTML, CSS, basic JS — responsive & accessible</p>
+                    </div>
+                    <div class="skill">
+                        <h4>Programming</h4>
+                        <p>Java, Python basics — algorithm practice & small apps</p>
+                    </div>
+                    <div class="skill">
+                        <h4>Tools</h4>
+                        <p>Git, VS Code, Chrome DevTools</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section alt">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-grid">
+                    <div>
+                        <p>Want to collaborate or hire? Drop a message.</p>
+                        <ul class="contact-list">
+                            <li><strong>Email:</strong> <a href="kabir10112006@gmail.com">kabir10112006@gmail.com</a></li>
+                            <li><strong>GitHub:</strong> <a href="#">https://github.com/kabir5145</a></li>
+                        </ul>
+                    </div>
+
+                    <form class="contact-form" action="#" method="post"
+                        onsubmit="alert('Demo form — replace action with your backend'); return false;">
+                        <label>
+                            <span class="label-text">Name</span>
+                            <input type="text" name="name" required />
+                        </label>
+                        <label>
+                            <span class="label-text">Email</span>
+                            <input type="email" name="email" required />
+                        </label>
+                        <label>
+                            <span class="label-text">Message</span>
+                            <textarea name="message" rows="5" required></textarea>
+                        </label>
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Kabir — Built with ♥</p>
+        </div>
+    </footer>
+
+    <script>
+        // small JS to toggle mobile nav and set year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const btn = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('.nav');
+        btn.addEventListener('click', () => {
+            const expanded = btn.getAttribute('aria-expanded') === 'true';
+            btn.setAttribute('aria-expanded', String(!expanded));
+            nav.classList.toggle('open');
+        });
+    </script>
+</body>
+
+</html>
